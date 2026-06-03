@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Semántico</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1f3b68;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        input {
+            padding: 6px;
+        }
+
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+        section {
+            display: flex;
+            min-height: 350px;
+        }
+
+        aside {
+            width: 25%;
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        aside:first-child {
+            background-color: #4472c4;
+        }
+
+        aside:last-child {
+            background-color: #ed7d31;
+        }
+
+        main {
+            width: 50%;
+            background-color: #5b9bd5;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        article {
+            margin-top: 80px;
+        }
+
+        footer {
+            background-color: #1f3b68;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Sitio Web</h1>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <form>
+            <label for="buscar">Buscar:</label>
+            <input type="search" id="buscar" name="buscar" placeholder="Escriba aquí">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <section>
+        <aside>
+            <h2>Filtros</h2>
+            <p>Opciones de búsqueda</p>
+        </aside>
+
+        <main>
+            <article>
+                <h2>Contenido Principal</h2>
+                <h1>Título del artículo</h1>
+                <p>
+                    Este es el contenido principal de la página, ubicado dentro de
+                    las etiquetas semánticas main y article.
+                </p>
+            </article>
+        </main>
+
+        <aside>
+            <h2>Relacionado</h2>
+            <p>Contenido relacionado</p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>&copy; UTN 2026</p>
+    </footer>
+
+</body>
+</html>
