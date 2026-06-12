@@ -5,80 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model - Workshop</title>
 
-    <style>
-        /* Parte CSS */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #002b5c;
-        }
-
-        .card {
-            width: 500px; /* Ancho de la tarjeta */
-            margin: 16px; /* Espacio externo */
-            border: 2px solid #cccccc; /* Borde gris */
-            padding: 20px;  /* Espacio interno */
-            background-color: #f7f9fc; /* Color de fondo */
-            box-sizing: border-box; /* Mantiene el ancho total en 500px */
-        }
-
-        .encabezado {
-            background-color: #213f6d;
-            color: white;
-            padding: 25px 20px;
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .linea {
-            height: 8px;
-            background-color: #ffc400;
-            margin-top: 10px;
-            margin-bottom: 15px;
-        }
-
-        h2 {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-
-        p {
-            font-size: 15px;
-            margin-bottom: 25px;
-        }
-
-        .boton {
-            background-color: #213f6d;
-            color: #ffc400;
-            text-align: center;
-            padding: 12px;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- Parte HTML -->
 <body>
 
-    <div class="card">
-        
-        <div class="encabezado">
-            ISW-521
-        </div>
+    <main class="card">
 
-        <!-- Linea Amarilla -->
+        <header class="encabezado">
+            <h1>ISW-521</h1>
+        </header>
+
         <div class="linea"></div>
 
-        <!-- Titulo del curso -->
-        <h2>Programación en Ambiente Web I</h2>
+        <section class="contenido">
+            <h2>Programación en Ambiente Web I</h2>
 
-        <!-- Texto descriptivo -->
-        <p>Aprende a construir aplicaciones web modernas con HTML, CSS y JavaScript.</p>
+            <p>
+                Aprende a construir aplicaciones web modernas con HTML, CSS y JavaScript.
+            </p>
 
-        <div class="boton">
-            Ver curso →
-        </div>
-    </div>
+            <!-- Control para que el botón funcione sin JavaScript -->
+            <input type="checkbox" id="ver-curso" class="control-curso">
+
+            <label for="ver-curso" class="boton">
+                Ver curso →
+            </label>
+
+            <div class="mensaje">
+                <p>
+                    Este curso permite practicar el uso del modelo de caja en CSS:
+                    margin, border, padding y width.
+                </p>
+            </div>
+
+            <!-- Cuadrito gris -->
+            <div class="cuadro-boxmodel"></div>
+        </section>
+
+    </main>
 
 </body>
 </html>

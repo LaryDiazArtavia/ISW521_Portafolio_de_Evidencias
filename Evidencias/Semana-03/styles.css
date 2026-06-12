@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #002b5c;
+    margin: 0;
+}
+
+/* Tarjeta principal */
+.card {
+    width: 500px;
+    margin: 16px;
+    border: 2px solid #cccccc;
+    padding: 20px;
+    background-color: #f7f9fc;
+    box-sizing: border-box;
+}
+
+/* Encabezado azul */
+.encabezado {
+    background-color: #213f6d;
+    color: white;
+    padding: 25px 20px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Línea amarilla */
+.linea {
+    height: 8px;
+    background-color: #ffc400;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Contenido */
+.contenido h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contenido p {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Oculta el checkbox */
+.control-curso {
+    display: none;
+}
+
+/* Botón */
+.boton {
+    display: block;
+    background-color: #213f6d;
+    color: #ffc400;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Interacción del botón */
+.boton:hover {
+    background-color: #ffc400;
+    color: #213f6d;
+}
+
+.boton:active {
+    transform: scale(0.98);
+}
+
+/* Mensaje oculto */
+.mensaje {
+    display: none;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #e8eef7;
+    border-left: 4px solid #213f6d;
+}
+
+/* Cuando se toca el botón, aparece el mensaje */
+.control-curso:checked + .boton + .mensaje {
+    display: block;
+}
+
+/* Cuadrito gris de líneas debajo del botón */
+.cuadro-boxmodel {
+    height: 10px;
+    margin-top: 75px;
+    border: 2px solid #cccccc;
+    background-color: transparent;
+    box-sizing: border-box;
+}
