@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--Configuración básica del documento HTML-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskUni | Organización académica para estudiantes</title>
 
+    <!--Archivo externo de estilos CSS-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!--Enlace de accesibilidad para saltar directamente al contenido principal-->
     <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
 
+    <!-- Encabezado principal del sitio -->
     <header class="site-header">
         <nav class="navbar" aria-label="Navegación principal">
             <a href="#inicio" class="logo" aria-label="Ir al inicio de TaskUni">TaskUni</a>
 
+            <!-- Menú de navegación -->
             <ul class="nav-list">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#beneficios">Beneficios</a></li>
@@ -21,13 +26,17 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
 
+            <!-- Botón que cambia el modo claro y oscuro usando JavaScript -->
             <button class="theme-toggle" type="button" aria-label="Cambiar entre modo claro y modo oscuro">
                 Modo oscuro
             </button>
         </nav>
     </header>
 
+     <!-- Contenido principal de la Landing Page -->
     <main id="contenido-principal">
+
+        <!-- Sección inicial de presentación del producto -->
         <section id="inicio" class="hero-section">
             <div class="hero-content">
                 <p class="section-label">Organización académica</p>
@@ -41,6 +50,7 @@
             </div>
         </section>
 
+        <!-- Sección de beneficios de la aplicación -->
         <section id="beneficios" class="benefits-section" aria-labelledby="beneficios-title">
             <div class="section-header">
                 <p class="section-label">Beneficios</p>
@@ -69,6 +79,7 @@
             </div>
         </section>
 
+        <!-- Sección de funciones principales del producto -->
         <section id="funciones" class="features-section" aria-labelledby="funciones-title">
             <div class="section-header">
                 <p class="section-label">Funciones</p>
@@ -93,6 +104,7 @@
             </div>
         </section>
 
+        <!-- Información complementaria relacionada con el estudio -->
         <aside class="study-tip" aria-labelledby="consejo-title">
             <h2 id="consejo-title">Consejo académico</h2>
             <p>
@@ -101,6 +113,7 @@
             </p>
         </aside>
 
+        <!-- Sección de contacto con formulario básico -->
         <section id="contacto" class="contact-section" aria-labelledby="contacto-title">
             <div class="section-header">
                 <p class="section-label">Contacto</p>
@@ -113,12 +126,12 @@
             <form class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
                 </div>
 
                 <div class="form-group">
                     <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
                 </div>
 
                 <button type="submit" class="primary-button">Enviar información</button>
@@ -126,10 +139,12 @@
         </section>
     </main>
 
+    <!-- Pie de página del sitio -->
     <footer class="site-footer">
         <p>&copy; 2026 TaskUni. Proyecto académico de Landing Page Responsiva.</p>
     </footer>
 
+    <!-- Archivo externo de JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>

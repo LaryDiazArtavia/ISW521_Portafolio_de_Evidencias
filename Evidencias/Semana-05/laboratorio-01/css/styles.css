@@ -1,3 +1,5 @@
+/*------Estilos generales del sitio------*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,6 +27,11 @@ input {
     font: inherit;
 }
 
+/* 
+     ---------Enlace de salto para accesibilidad---------
+    Permite ir directo al contenido principal usando teclado
+*/
+
 .skip-link {
     position: absolute;
     top: -40px;
@@ -39,6 +46,11 @@ input {
 .skip-link:focus {
     top: 16px;
 }
+
+/*
+     ---------Encabezado y navegación---------
+    Aquí se usa Flexbox para ordenar el logo, menú y botón 
+*/
 
 .site-header {
     position: sticky;
@@ -82,6 +94,8 @@ input {
     color: #0f3d7a;
 }
 
+/* ---------Botones principales--------- */
+
 .theme-toggle,
 .primary-button {
     border: none;
@@ -103,6 +117,8 @@ input {
     background-color: #092957;
 }
 
+/* ---------Contenido principal y seción inicial--------- */
+
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -122,6 +138,8 @@ main {
 .hero-content {
     max-width: 650px;
 }
+
+/* ---------Textos y títulos--------- */
 
 .section-label {
     color: #0f3d7a;
@@ -152,12 +170,19 @@ h3 {
     margin-bottom: 28px;
 }
 
+/* ---------Secciones internas--------- */
+
 .benefits-section,
 .features-section,
 .contact-section,
 .study-tip {
     margin-top: 64px;
 }
+
+/*   
+     ---------Tarjetas con CSS Grid--------- 
+    Se usa Grid para crear columnas de beneficios y funciones
+*/
 
 .benefits-grid,
 .features-grid {
@@ -176,6 +201,11 @@ h3 {
     padding: 24px;
     box-shadow: 0 10px 24px rgba(15, 61, 122, 0.06);
 }
+
+/*
+     ---------Formulario de contacto---------
+    Se usa Flexbox en columna para ordenar los campos
+*/
 
 .study-tip {
     border-left: 6px solid #0f3d7a;
@@ -212,6 +242,8 @@ input::placeholder {
     color: #5d6b7c;
 }
 
+/* ---------Pie de página--------- */
+
 .site-footer {
     margin-top: 40px;
     padding: 24px;
@@ -220,7 +252,11 @@ input::placeholder {
     color: #ffffff;
 }
 
-/* Foco visible para navegación con teclado */
+/*  
+     ---------Accesibilidad---------
+    El Foco Visible permite ver que está seleccionado con Tab
+*/
+
 a:focus,
 button:focus,
 input:focus {
@@ -228,7 +264,8 @@ input:focus {
     outline-offset: 4px;
 }
 
-/* Modo oscuro: luego lo activaremos con JavaScript y localStorage */
+/* Modo oscuro: se activa desde JavaScript usando localStorage */
+
 body.dark-theme {
     background-color: #101828;
     color: #e6edf7;
