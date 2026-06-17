@@ -35,11 +35,15 @@ laboratorio-01/
 ## Funcionalidades principales
 
 * Página estructurada con etiquetas semánticas de HTML5.
-* Diseño responsivo para escritorio, tablet y móvil.
-* Uso de Flexbox en la navegación.
-* Uso de CSS Grid en las tarjetas de beneficios y funciones.
+* Diseño responsivo con enfoque mobile first para teléfono, tablet y computadora.
+* Uso de Flexbox en la navegación, formulario y elementos internos.
+* Uso de CSS Grid en secciones de tarjetas, pasos y calendario.
+* Vista previa visual de la aplicación TaskUni.
+* Calendario académico interactivo con tareas de ejemplo.
+* Sección “Cómo funciona” con tres pasos principales.
 * Navegación mediante teclado con foco visible.
 * Modo claro y modo oscuro usando localStorage.
+* Formulario con validación HTML5 y mensaje de confirmación dentro de la página.
 
 ## Pruebas realizadas
 
@@ -48,3 +52,6 @@ laboratorio-01/
 * Verificación de contraste de colores superior a 4.5:1.
 * Prueba de persistencia del modo oscuro al recargar la página.
 * Prueba de navegación con teclado usando Tab y Enter.
+* Prueba del calendario interactivo.
+* Prueba del formulario de contacto.
+* Revisión responsiva en móvil, tablet y computadora.

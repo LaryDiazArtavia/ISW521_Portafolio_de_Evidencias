@@ -36,17 +36,157 @@
      <!-- Contenido principal de la Landing Page -->
     <main id="contenido-principal">
 
-        <!-- Sección inicial de presentación del producto -->
-        <section id="inicio" class="hero-section">
+        
+    <!-- Sección inicial de presentación del producto -->
+    <section id="inicio" class="hero-section" aria-labelledby="inicio-title">
+        <div class="hero-layout">
             <div class="hero-content">
                 <p class="section-label">Organización académica</p>
-                <h1>Organice sus tareas universitarias con TaskUni</h1>
+                <h1 id="inicio-title">Organice sus tareas universitarias con TaskUni</h1>
                 <p>
                     TaskUni ayuda a estudiantes universitarios a registrar tareas,
                     fechas de entrega y prioridades académicas en un solo lugar.
                 </p>
 
-                <a href="#contacto" class="primary-button">Quiero organizarme mejor</a>
+            <a href="#contacto" class="primary-button">Quiero organizarme mejor</a>
+        </div>
+
+        <div class="hero-highlights" >
+            <div class="highlight-item">
+                <span class="mini-icon" aria-hidden="true">✓</span>
+                <div>
+                    <strong>Todo en un lugar</strong>
+                    <p>Tareas, fechas y prioridades.</p>
+                </div>
+            </div>
+
+            <div class="highlight-item">
+                <span class="mini-icon" aria-hidden="true">!</span>
+                <div>
+                    <strong>Recordatorios</strong>
+                    <p>Controle entregas importantes.</p>
+                </div>
+            </div>
+
+            <div class="highlight-item">
+                <span class="mini-icon" aria-hidden="true">↑</span>
+                <div>
+                    <strong>Más enfoque</strong>
+                    <p>Trabaje según prioridad.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-preview">
+            <div class="app-sidebar">
+                <h2>TaskUni</h2>
+
+                <ul>
+                    <li class="active">Resumen</li>
+                    <li>Tareas</li>
+                    <li>Calendario</li>
+                    <li>Prioridades</li>
+                </ul>
+            </div>
+
+            <div class="app-screen">
+                <div class="calendar-header">
+                    <h2>Junio 2026</h2>
+                    <button type="button" class="today-button">Hoy</button>
+                </div>
+
+                <div class="calendar-grid">
+                    <span>Lun</span>
+                    <span>Mar</span>
+                    <span>Mié</span>
+                    <span>Jue</span>
+                    <span>Vie</span>
+                    <span>Sáb</span>
+                    <span>Dom</span>
+
+                    <button type="button" class="calendar-day">1</button>
+                    <button type="button" class="calendar-day">2</button>
+                    <button type="button" class="calendar-day">3</button>
+                    <button type="button" class="calendar-day">4</button>
+                    <button type="button" class="calendar-day">5</button>
+                    <button type="button" class="calendar-day">6</button>
+                    <button type="button" class="calendar-day">7</button>
+
+                    <button type="button" class="calendar-day">8</button>
+                    <button type="button" class="calendar-day">9</button>
+                    <button type="button" class="calendar-day">10</button>
+                    <button type="button" class="calendar-day">11</button>
+                    <button type="button" class="calendar-day has-task" data-day="12">12</button>
+                    <button type="button" class="calendar-day">13</button>
+                    <button type="button" class="calendar-day">14</button>
+
+                    <button type="button" class="calendar-day active-day has-task" data-day="15">15</button>
+                    <button type="button" class="calendar-day">16</button>
+                    <button type="button" class="calendar-day has-task" data-day="17">17</button>
+                    <button type="button" class="calendar-day">18</button>
+                    <button type="button" class="calendar-day">19</button>
+                    <button type="button" class="calendar-day">20</button>
+                    <button type="button" class="calendar-day">21</button>
+
+                    <button type="button" class="calendar-day">22</button>
+                    <button type="button" class="calendar-day">23</button>
+                    <button type="button" class="calendar-day has-task" data-day="24">24</button>
+                    <button type="button" class="calendar-day">25</button>
+                    <button type="button" class="calendar-day">26</button>
+                    <button type="button" class="calendar-day">27</button>
+                    <button type="button" class="calendar-day">28</button>
+
+                    <button type="button" class="calendar-day">29</button>
+                    <button type="button" class="calendar-day">30</button>
+                </div>
+
+                <div class="task-preview">
+                    <div class="task-preview-header">
+                        <h3 id="selected-day-title">Tareas del 15 de junio</h3>
+                    </div>
+
+                    <ul id="calendar-task-list">
+                        <li>
+                            <span>Proyecto de programación web</span>
+                            <strong class="priority high">Alta</strong>
+                        </li>
+                        <li>
+                            <span>Repaso de base de datos</span>
+                            <strong class="priority medium">Media</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Sección que explica el funcionamiento básico de la aplicación -->
+        <section class="steps-section" aria-labelledby="steps-title">
+            <div class="section-header centered-header">
+                <p class="section-label">Cómo funciona</p>
+                <h2 id="steps-title">Empiece a organizarse en tres pasos</h2>
+            </div>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span class="step-icon" aria-hidden="true">+</span>
+                    <h3>1. Agregue sus tareas</h3>
+                    <p>Registre trabajos, proyectos, prácticas o exámenes pendientes.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-icon" aria-hidden="true">□</span>
+                    <h3>2. Asigne fechas</h3>
+                    <p>Coloque fechas de entrega para planificar con anticipación.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-icon" aria-hidden="true">↑</span>
+                    <h3>3. Priorice</h3>
+                    <p>Ordene sus pendientes según urgencia o importancia académica.</p>
+                </article>
             </div>
         </section>
 
@@ -63,16 +203,19 @@
 
             <div class="benefits-grid">
                 <article class="benefit-card">
+                    <span class="card-icon" aria-hidden="true">◎</span>
                     <h3>Mejor control</h3>
                     <p>Permite visualizar las tareas pendientes y evitar olvidos importantes.</p>
                 </article>
 
                 <article class="benefit-card">
+                    <span class="card-icon" aria-hidden="true">↑</span>
                     <h3>Prioridades claras</h3>
                     <p>Ayuda a identificar cuáles entregas requieren atención primero.</p>
                 </article>
 
                 <article class="benefit-card">
+                    <span class="card-icon" aria-hidden="true">○</span>
                     <h3>Menos estrés</h3>
                     <p>Organizar fechas y pendientes facilita una rutina académica más ordenada.</p>
                 </article>
@@ -88,16 +231,19 @@
 
             <div class="features-grid">
                 <article class="feature-card">
+                    <span class="card-icon" aria-hidden="true">☰</span>
                     <h3>Registro de tareas</h3>
                     <p>El estudiante puede anotar trabajos, prácticas, proyectos y exámenes.</p>
                 </article>
 
                 <article class="feature-card">
+                    <span class="card-icon" aria-hidden="true">□</span>
                     <h3>Fechas de entrega</h3>
                     <p>Permite guardar fechas importantes para planificar con anticipación.</p>
                 </article>
 
                 <article class="feature-card">
+                    <span class="card-icon" aria-hidden="true">▲</span>
                     <h3>Orden por prioridad</h3>
                     <p>Las tareas pueden organizarse según su urgencia o importancia.</p>
                 </article>
@@ -135,6 +281,7 @@
                 </div>
 
                 <button type="submit" class="primary-button">Enviar información</button>
+                <p class="form-message" aria-live="polite"></p>
             </form>
         </section>
     </main>
