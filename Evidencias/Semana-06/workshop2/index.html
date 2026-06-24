@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <a href="#contenido-principal" class="saltar-contenido">Saltar al contenido principal</a>
+
+    <header>
+        <h1>Mi Portafolio</h1>
+        <p>Lary Díaz Artavia - Ingeniería en Software</p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#ejercicios">Ejercicios JS</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido-principal" class="contenedor">
+
+        <section id="perfil" class="perfil">
+            <img src="foto.png" alt="Foto de perfil de Lary Díaz Artavia">
+
+            <div>
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy estudiante de Ingeniería en Software en la Universidad Técnica Nacional.
+                    Me interesa aprender sobre programación, diseño web y creación de soluciones tecnológicas.
+                </p>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+
+            <div class="proyectos">
+                <article class="proyecto">
+                    <h3>Currículum Vitae Web</h3>
+                    <p>
+                        Página web creada con HTML y CSS para mostrar datos personales,
+                        formación académica, habilidades y experiencia.
+                    </p>
+                    <a href="#" aria-label="Ver proyecto Currículum Vitae Web">Ver proyecto</a>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Landing Page Responsiva</h3>
+                    <p>
+                        Diseño de una página de inicio responsiva usando secciones,
+                        estilos CSS y adaptación para diferentes pantallas.
+                    </p>
+                    <a href="#" aria-label="Ver proyecto Landing Page Responsiva">Ver proyecto</a>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Portafolio Personal</h3>
+                    <p>
+                        Página web tipo portafolio con información personal,
+                        lista de proyectos, navegación y diseño adaptable.
+                    </p>
+                    <a href="#" aria-label="Ver proyecto Portafolio Personal">Ver proyecto</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Conocimientos básicos en HTML y CSS</li>
+                <li>Manejo básico de computadoras</li>
+                <li>Trabajo en equipo</li>
+                <li>Responsabilidad</li>
+                <li>Organización</li>
+            </ul>
+        </section>
+
+        <section id="ejercicios">
+            <h2>Ejercicios de JavaScript</h2>
+
+            <article class="ejercicio">
+                <h3>1. FizzBuzz clásico</h3>
+                <p>
+                    Imprime números del 1 al 30. Los múltiplos de 3 muestran Fizz,
+                    los múltiplos de 5 muestran Buzz y los múltiplos de ambos muestran FizzBuzz.
+                </p>
+                <pre id="resultadoFizzBuzz"></pre>
+            </article>
+
+            <article class="ejercicio">
+                <h3>3. Suma de un arreglo</h3>
+                <p>
+                    Dado el arreglo [4, 8, 15, 16, 23, 42], se calcula la suma total usando un ciclo for...of.
+                </p>
+                <pre id="resultadoSuma"></pre>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lary Díaz Artavia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
